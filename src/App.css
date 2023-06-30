@@ -1,0 +1,130 @@
+.App{
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3rem;
+ 
+}
+.grey{
+    background-color: grey;
+    filter:brightness(1.5);
+    transform: translate(30%,-50%);
+    position: absolute;
+    z-index: -3;
+    width: 11vw;
+    height: 30vh;
+}
+
+.divend{
+    position: absolute;
+    bottom: 0;
+    right: 3vw;
+    font-size: 3vw;
+}
+nav{
+    position: absolute;
+}
+.navbar-brand{
+    transform: translate(100%,100%);
+    font-weight: 700;
+}
+.navbar-brand:hover{
+   filter: drop-shadow(0 0 10px #fff);
+}
+.bg{
+  
+    position: absolute; 
+    height: 150%;
+    width: 100%;
+    filter: opacity(0.7) blur(25px);
+    z-index: -1;
+}
+
+.cart:hover{
+   cursor:pointer !important;
+   border: 0.1rem outset #000;
+   padding: 5px;
+   filter: drop-shadow(2px 2px 4px black);
+   border: 1px solid #000;
+   border-radius: 10px 10px 10px 10px;
+   transform: scale(1.2);
+}
+.mainlogo{
+    position: absolute;
+    transform: translate(0%,-35%);
+    right: 0px;
+    margin-right: 25px;
+    width: 35vw;
+    z-index: -1;
+}
+.sec1 h1{
+    margin-left: 5vw;
+    margin-top: 15vh;
+    font-weight: 800;
+    color: black !important;
+}
+
+.btn10 {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+    min-width: 10vw;
+    height: 10vh;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    border-radius: 35px 35px 0px 35px;
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    .mainlogo{
+        width: 15rem;
+        transform: translate(25%,-35%);
+    }
+    h1{
+        transform: translate(0,-100%);
+        font-size: 5vw !important; 
+    }
+    .navbar-brand{
+        transform: translate(-40%,10%);
+    }
+    .btn10{
+        transform: translate(-10%,-8rem);
+        height: min-content;
+        font-size: large;
+    }
+    .cart{
+        transform: scale(0.9);
+        transform: translate(60%);
+    }
+    .cart:hover{
+        transform: translate(60%) !important;
+    }
+  }
+
+.btn10:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+  }
+  .btn10:hover {
+    color: #000;
+    border-radius: 0px 35px 0px 35px;
+    transition: 1s;
+  }
+  .btn10:hover:after {
+    background: #fff;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
